@@ -117,12 +117,12 @@ CREATE TABLE `user_activities` (
 -- Password for admin: 'admin' (hashed)
 -- Password for user accounts: 'user' (hashed)
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `created_at`) VALUES
-(1, 'Admin Belva', 'admin@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', '2025-07-18 10:00:00'),
-(2, 'Andi Pratama', 'andi@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user', '2025-07-18 11:30:00'),
-(3, 'Sari Melati', 'sari@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user', '2025-07-18 12:45:00'),
-(4, 'Budi Santoso', 'budi@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user', '2025-07-18 14:20:00'),
-(5, 'Maya Indira', 'maya@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user', '2025-07-18 16:10:00'),
-(6, 'Rizki Ahmad', 'rizki@bookstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user', '2025-07-19 08:30:00');
+(1, 'Admin Belva', 'admin@bookstore.com', '$2a$12$WKuaIaWHX6eeW0pnRdC7wunximNplndnKWYOU.JBRI6kVFsMBSREq', 'admin', '2025-07-18 10:00:00'),
+(2, 'Andi Pratama', 'andi@bookstore.com', '$2a$12$U81X5ttxGoxiugbUCsvmgeXzY3xiTLDhCoCK22mWW.chnuE5AP1O6', 'user', '2025-07-18 11:30:00'),
+(3, 'Sari Melati', 'sari@bookstore.com', '$2a$12$U81X5ttxGoxiugbUCsvmgeXzY3xiTLDhCoCK22mWW.chnuE5AP1O6', 'user', '2025-07-18 12:45:00'),
+(4, 'Budi Santoso', 'budi@bookstore.com', '$2a$12$U81X5ttxGoxiugbUCsvmgeXzY3xiTLDhCoCK22mWW.chnuE5AP1O6', 'user', '2025-07-18 14:20:00'),
+(5, 'Maya Indira', 'maya@bookstore.com', '$2a$12$U81X5ttxGoxiugbUCsvmgeXzY3xiTLDhCoCK22mWW.chnuE5AP1O6', 'user', '2025-07-18 16:10:00'),
+(6, 'Rizki Ahmad', 'rizki@bookstore.com', '$2a$12$U81X5ttxGoxiugbUCsvmgeXzY3xiTLDhCoCK22mWW.chnuE5AP1O6', 'user', '2025-07-19 08:30:00');
 
 -- Dumping data for table `categories`
 INSERT INTO `categories` (`id`, `name`, `description`, `created_at`) VALUES
