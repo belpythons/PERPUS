@@ -104,8 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="mt-3">
                             <small class="text-muted">
                                 <strong>Demo Account:</strong><br>
-                                Admin: admin@bookstore.com / password<br>
-                                User: user@bookstore.com / password
+                                Admin: admin@bookstore.com / admin<br>
+                                User: user@bookstore.com / user
                             </small>
                         </div>
                     </div>
