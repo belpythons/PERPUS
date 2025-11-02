@@ -18,7 +18,7 @@
 // ========================================================================
 // Konfigurasi koneksi database - ubah sesuai dengan setup environment Anda
 define('DB_HOST', 'localhost');     // Host database (biasanya localhost untuk development)
-define('DB_NAME', 'bookstore_db');  // Nama database yang digunakan
+define('DB_NAME', 'vigilant_increase_roy_bookstore_db');  // Nama database yang digunakan
 define('DB_USER', 'root');          // Username database (default XAMPP adalah 'root')
 define('DB_PASS', '');              // Password database (default XAMPP kosong)
 
