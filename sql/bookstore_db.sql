@@ -284,63 +284,66 @@ CREATE TABLE `user_activities` (
 --
 -- Dumping data for table `user_activities`
 --
+-- CATATAN: Kolom 'id' sengaja dihapus dari perintah INSERT 
+-- agar AUTO_INCREMENT yang baru ditambahkan dapat mengisinya secara otomatis.
+--
 
-INSERT INTO `user_activities` (`id`, `user_id`, `activity_type`, `description`, `created_at`) VALUES
-(1, 1, 'login', 'Admin logged in to dashboard', '2025-07-18 09:45:00'),
-(2, 2, 'register', 'New user registered: Andi Pratama', '2025-07-18 11:30:00'),
-(3, 2, 'login', 'User logged in', '2025-07-18 15:00:00'),
-(4, 2, 'purchase', 'Purchased books: Laskar Pelangi, Clean Code', '2025-07-18 15:45:00'),
-(5, 2, 'review', 'Added review for Laskar Pelangi', '2025-07-18 15:50:00'),
-(9, 4, 'register', 'New user registered: Budi Santoso', '2025-07-18 14:20:00'),
-(10, 4, 'login', 'User logged in', '2025-07-18 18:45:00'),
-(11, 4, 'purchase', 'Purchased books: Steve Jobs, Elon Musk', '2025-07-18 19:15:00'),
-(12, 2, 'login', 'User logged in', '2025-07-19 08:00:00'),
-(13, 2, 'purchase', 'Purchased book: JavaScript The Good Parts', '2025-07-19 08:20:00'),
-(14, 5, 'register', 'New user registered: Maya Indira', '2025-07-18 16:10:00'),
-(15, 5, 'login', 'User logged in', '2025-07-19 10:45:00'),
-(16, 5, 'purchase', 'Purchased books: Sapiens, Educated', '2025-07-19 11:10:00'),
-(17, 6, 'register', 'New user registered: Rizki Ahmad', '2025-07-19 08:30:00'),
-(18, 6, 'login', 'User logged in', '2025-07-19 14:00:00'),
-(19, 6, 'purchase', 'Purchased books: Laravel untuk Pemula (2 copies)', '2025-07-19 14:45:00'),
-(22, 4, 'login', 'User logged in', '2025-07-19 18:15:00'),
-(23, 4, 'purchase', 'Purchased book: Atomic Habits', '2025-07-19 18:30:00'),
-(24, 2, 'login', 'User logged in', '2025-07-20 09:00:00'),
-(25, 2, 'purchase', 'Purchased book: The Power of Now', '2025-07-20 09:15:00'),
-(26, 5, 'login', 'User logged in', '2025-07-20 11:30:00'),
-(27, 5, 'purchase', 'Purchased book: Elon Musk', '2025-07-20 11:45:00'),
-(28, 2, 'review', 'Added review for Clean Code', '2025-07-18 17:30:00'),
-(29, 4, 'review', 'Added review for Steve Jobs', '2025-07-18 19:45:00'),
-(31, 5, 'review', 'Added review for Sapiens', '2025-07-19 13:15:00'),
-(32, 6, 'review', 'Added review for Atomic Habits', '2025-07-19 15:30:00'),
-(33, 2, 'profile_update', 'Updated profile information', '2025-07-20 08:45:00'),
-(35, 1, 'logout', 'Admin logged out', '2025-07-20 12:30:00'),
-(36, 2, 'logout', 'User logged out', '2025-07-20 10:00:00'),
-(37, 5, 'logout', 'User logged out', '2025-07-20 12:15:00'),
-(38, 6, 'logout', 'User logged out', '2025-07-19 17:30:00'),
-(0, 2, 'browse', 'Browsed Technology category', '2025-07-18 14:30:00'),
-(0, 4, 'search', 'Searched for \"Steve Jobs\"', '2025-07-18 18:30:00'),
-(0, 5, 'browse', 'Browsed Non-Fiction category', '2025-07-19 10:30:00'),
-(0, 6, 'search', 'Searched for \"Laravel\"', '2025-07-19 13:45:00'),
-(0, 2, 'logout', 'User logged out successfully', '2025-07-20 11:09:44'),
-(0, 7, 'login', 'User logged in', '2025-07-20 12:00:10'),
-(0, 7, 'purchase', 'Purchased book: Make It Stick', '2025-07-20 12:01:52'),
-(0, 7, 'purchase', 'Purchased book: Educated', '2025-07-20 12:02:16'),
-(0, 7, 'logout', 'User logged out successfully', '2025-07-20 12:02:26'),
-(0, 1, 'login', 'User logged in', '2025-07-20 12:02:36'),
-(0, 1, 'login', 'User logged in', '2025-07-21 13:19:00'),
-(0, 1, 'logout', 'User logged out successfully', '2025-07-21 13:22:33'),
-(0, 7, 'login', 'User logged in', '2025-07-21 13:23:40'),
-(0, 8, 'login', 'User logged in', '2025-07-23 10:19:30'),
-(0, 8, 'logout', 'User logged out successfully', '2025-07-23 10:19:34'),
-(0, 1, 'login', 'User logged in', '2025-07-23 10:19:40'),
-(0, 1, 'logout', 'User logged out successfully', '2025-07-23 10:19:45'),
-(0, 1, 'login', 'User logged in', '2025-07-23 10:32:41'),
-(0, 1, 'logout', 'User logged out successfully', '2025-07-23 10:32:45'),
-(0, 8, 'login', 'User logged in', '2025-07-23 10:32:51'),
-(0, 8, 'logout', 'User logged out successfully', '2025-07-23 10:32:57'),
-(0, 7, 'login', 'User logged in', '2025-07-23 10:33:08'),
-(0, 7, 'logout', 'User logged out successfully', '2025-07-23 10:33:21'),
-(0, 1, 'login', 'User logged in', '2025-07-23 10:33:28');
+INSERT INTO `user_activities` (`user_id`, `activity_type`, `description`, `created_at`) VALUES
+(1, 'login', 'Admin logged in to dashboard', '2025-07-18 09:45:00'),
+(2, 'register', 'New user registered: Andi Pratama', '2025-07-18 11:30:00'),
+(2, 'login', 'User logged in', '2025-07-18 15:00:00'),
+(2, 'purchase', 'Purchased books: Laskar Pelangi, Clean Code', '2025-07-18 15:45:00'),
+(2, 'review', 'Added review for Laskar Pelangi', '2025-07-18 15:50:00'),
+(4, 'register', 'New user registered: Budi Santoso', '2025-07-18 14:20:00'),
+(4, 'login', 'User logged in', '2025-07-18 18:45:00'),
+(4, 'purchase', 'Purchased books: Steve Jobs, Elon Musk', '2025-07-18 19:15:00'),
+(2, 'login', 'User logged in', '2025-07-19 08:00:00'),
+(2, 'purchase', 'Purchased book: JavaScript The Good Parts', '2025-07-19 08:20:00'),
+(5, 'register', 'New user registered: Maya Indira', '2025-07-18 16:10:00'),
+(5, 'login', 'User logged in', '2025-07-19 10:45:00'),
+(5, 'purchase', 'Purchased books: Sapiens, Educated', '2025-07-19 11:10:00'),
+(6, 'register', 'New user registered: Rizki Ahmad', '2025-07-19 08:30:00'),
+(6, 'login', 'User logged in', '2025-07-19 14:00:00'),
+(6, 'purchase', 'Purchased books: Laravel untuk Pemula (2 copies)', '2025-07-19 14:45:00'),
+(4, 'login', 'User logged in', '2025-07-19 18:15:00'),
+(4, 'purchase', 'Purchased book: Atomic Habits', '2025-07-19 18:30:00'),
+(2, 'login', 'User logged in', '2025-07-20 09:00:00'),
+(2, 'purchase', 'Purchased book: The Power of Now', '2025-07-20 09:15:00'),
+(5, 'login', 'User logged in', '2025-07-20 11:30:00'),
+(5, 'purchase', 'Purchased book: Elon Musk', '2025-07-20 11:45:00'),
+(2, 'review', 'Added review for Clean Code', '2025-07-18 17:30:00'),
+(4, 'review', 'Added review for Steve Jobs', '2025-07-18 19:45:00'),
+(5, 'review', 'Added review for Sapiens', '2025-07-19 13:15:00'),
+(6, 'review', 'Added review for Atomic Habits', '2025-07-19 15:30:00'),
+(2, 'profile_update', 'Updated profile information', '2025-07-20 08:45:00'),
+(1, 'logout', 'Admin logged out', '2025-07-20 12:30:00'),
+(2, 'logout', 'User logged out', '2025-07-20 10:00:00'),
+(5, 'logout', 'User logged out', '2025-07-20 12:15:00'),
+(6, 'logout', 'User logged out', '2025-07-19 17:30:00'),
+(2, 'browse', 'Browsed Technology category', '2025-07-18 14:30:00'),
+(4, 'search', 'Searched for \"Steve Jobs\"', '2025-07-18 18:30:00'),
+(5, 'browse', 'Browsed Non-Fiction category', '2025-07-19 10:30:00'),
+(6, 'search', 'Searched for \"Laravel\"', '2025-07-19 13:45:00'),
+(2, 'logout', 'User logged out successfully', '2025-07-20 11:09:44'),
+(7, 'login', 'User logged in', '2025-07-20 12:00:10'),
+(7, 'purchase', 'Purchased book: Make It Stick', '2025-07-20 12:01:52'),
+(7, 'purchase', 'Purchased book: Educated', '2025-07-20 12:02:16'),
+(7, 'logout', 'User logged out successfully', '2025-07-20 12:02:26'),
+(1, 'login', 'User logged in', '2025-07-20 12:02:36'),
+(1, 'login', 'User logged in', '2025-07-21 13:19:00'),
+(1, 'logout', 'User logged out successfully', '2025-07-21 13:22:33'),
+(7, 'login', 'User logged in', '2025-07-21 13:23:40'),
+(8, 'login', 'User logged in', '2025-07-23 10:19:30'),
+(8, 'logout', 'User logged out successfully', '2025-07-23 10:19:34'),
+(1, 'login', 'User logged in', '2025-07-23 10:19:40'),
+(1, 'logout', 'User logged out successfully', '2025-07-23 10:19:45'),
+(1, 'login', 'User logged in', '2025-07-23 10:32:41'),
+(1, 'logout', 'User logged out successfully', '2025-07-23 10:32:45'),
+(8, 'login', 'User logged in', '2025-07-23 10:32:51'),
+(8, 'logout', 'User logged out successfully', '2025-07-23 10:32:57'),
+(7, 'login', 'User logged in', '2025-07-23 10:33:08'),
+(7, 'logout', 'User logged out successfully', '2025-07-23 10:33:21'),
+(1, 'login', 'User logged in', '2025-07-23 10:33:28');
 
 --
 -- Indexes for dumped tables
@@ -400,6 +403,7 @@ ALTER TABLE `users`
 -- Indexes for table `user_activities`
 --
 ALTER TABLE `user_activities`
+  ADD PRIMARY KEY (`id`),
   ADD KEY `user_activities_ibfk_1` (`user_id`);
 
 --
@@ -447,6 +451,12 @@ ALTER TABLE `transaction_details`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `user_activities`
+--
+ALTER TABLE `user_activities`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- Constraints for dumped tables
